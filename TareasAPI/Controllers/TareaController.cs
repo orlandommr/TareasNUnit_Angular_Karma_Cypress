@@ -27,6 +27,13 @@ namespace TareasAPI.Controllers {
 				Tareas.Add(vTarea);
 				return CreatedAtAction(nameof(ObtenerTareas), new { id = vTarea.Id }, vTarea);
 		  }
+
+		  [HttpPost]
+		  public IActionResult CrearTarea([FromBody] Tarea nuevaTarea) {
+				nuevaTarea.Id = Tareas.Max(t => t.Id) + 1;
+				Tareas.Add(nuevaTarea);
+				return CreatedAtAction(nameof(ObtenerTareas), new { id = nuevaTarea.Id }, nuevaTarea);
+		  }
 	 }
 }
 
