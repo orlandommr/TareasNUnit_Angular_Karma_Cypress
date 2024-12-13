@@ -1,0 +1,1 @@
+C:\Users\luis.gutierrez\Documents\Curso Pruebas de Software\Clases\Clase 7\TareasNUnit_Angular_Karma_Cypress\SistemitaTareas\obj\Debug\SistemitaTareas.esproj.CoreCompileInputs.cache
